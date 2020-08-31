@@ -9,7 +9,10 @@ function clean(cb) {
     cb();
 }
 
-exports.default = gulp.series(clean, styles);
+exports.default = function () {
+    gulp.series(clean, styles);
+    gulp.watch('src/scss/*.scss', styles);
+};
 
 // const tasks = gulp.parallel(styles, script);
 // module.exports.dev = gulp.series(clean, tasks);

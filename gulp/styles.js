@@ -72,5 +72,4 @@ let vendorStyle = function () {
         .pipe(gulp.dest('public/css'));
 };
 
-// module.exports = gulp.parallel(mainStyle, vendorStyle);
-module.exports = mainStyle;
+module.exports = gulp.parallel(mainStyle, vendorStyle);
