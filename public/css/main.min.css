@@ -1,0 +1,7 @@
+body {
+  background: aliceblue; }
+
+.posts {
+  background: aquamarine; }
+  .posts li {
+    margin-bottom: 20px; }

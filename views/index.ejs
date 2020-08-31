@@ -1,0 +1,8 @@
+<%- include('layout/header.ejs'); %>
+    <a href="/create">Add</a>
+    <ul class="posts">
+        <% posts.forEach(function(item){ %>
+            <li><%= item.title %></li>
+        <% }); %>
+    </ul>
+<%- include('layout/footer.ejs'); %>

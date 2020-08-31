@@ -1,0 +1,7 @@
+{
+  "extends": ["prettier", "plugin:node/recommended"],
+  "rules": {
+    "jsx-quotes": [1, "prefer-double"]
+  },
+  "plugins": ["prettier", "node"]
+}

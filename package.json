@@ -1,0 +1,41 @@
+{
+  "name": "blog-node",
+  "version": "1.0.0",
+  "description": "youtube tutorial",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env PORT=3001 node app",
+    "dev": "nodemon app"
+  },
+  "author": "Ivan Kalkouski <ivan.kolkovskii@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "del": "^5.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-remove-sourcemaps": "^1.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.4.0",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.1.1",
+    "yargs": "^15.4.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cross-env": "^7.0.2",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "gulp-debug": "^4.0.0",
+    "mongoose": "^5.10.2"
+  }
+}
