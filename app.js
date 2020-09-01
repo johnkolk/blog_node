@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
+const passport = require('passport');
 const cors = require('cors');
 const morgan = require('morgan');
 const config = require('./config');
@@ -20,6 +21,9 @@ mongoose
     })
     .then(() => console.log('MongoDB connected.'))
     .catch((error) => console.log(error));
+
+app.use(passport.initialize());
+require('./middleware/passport')(passport);
 
 app.use(morgan('dev'));
 app.set('view engine', 'ejs');

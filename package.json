@@ -39,7 +39,10 @@
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "gulp-debug": "^4.0.0",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.2",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0"
   }
 }
