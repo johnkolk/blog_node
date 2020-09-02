@@ -26,6 +26,7 @@ app.use(passport.initialize());
 require('./middleware/passport')(passport);
 
 app.use(morgan('dev'));
+app.use('/uploads', express.static('uploads'));
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());

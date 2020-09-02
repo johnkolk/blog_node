@@ -4,6 +4,10 @@ const categorySchema = new Schema({
         type: String,
         required: true,
     },
+    imageSrc: {
+        type: String,
+        default: '',
+    },
 });
 
 module.exports = model('categories', categorySchema);
